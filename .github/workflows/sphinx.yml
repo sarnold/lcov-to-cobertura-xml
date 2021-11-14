@@ -16,6 +16,7 @@ jobs:
     # Builds docs using sphinx
     - uses: ammaraskar/sphinx-action@master
       with:
+        pre-build-command: "pip install .[doc]"
         docs-folder: "docs/"
 
     - uses: actions/upload-artifact@v2
