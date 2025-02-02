@@ -1,5 +1,16 @@
-lcov\_cobertura module
-======================
+lcov\_cobertura package
+=======================
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   lcov_cobertura.lcov_cobertura
+
+Module contents
+---------------
 
 .. automodule:: lcov_cobertura
    :members:
