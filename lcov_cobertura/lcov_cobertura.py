@@ -430,8 +430,9 @@ def main(argv=None):
             cobertura_xml = lcov_cobertura.convert()
         with open(options.output, mode='wt') as output_file:
             output_file.write(cobertura_xml)
-    except IOError:
-        sys.stderr.write("Unable to convert %s to Cobertura XML" % args[1])
+    except IOError as exc:
+        print(f"Unable to convert {args[1]} to Cobertura XML")
+        print(f"{exc}")
 
 
 if __name__ == '__main__':
